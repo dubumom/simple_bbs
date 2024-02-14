@@ -21,6 +21,8 @@
   <h1>글 상세페이지</h1>
   <h2>글쓴이: <?= $row->username?></h2>
   <h3>글내용: <?= $row->usermsg?></h3>
+  <hr>
+  <a href="update.php?idx=<?=$num?>">수정</a> / <a href="delete.php">삭제</a>
   <?php
     } else{
       echo "<script>alert('해당글이 없습니다'); location.href='index.php';</script>";
